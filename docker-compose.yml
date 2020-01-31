@@ -1,0 +1,16 @@
+app:
+  # restart: 'yes'
+  image: php:7.4-apache
+  command: php -S 0.0.0.0:8000 /app/index.php
+  ports:
+    - "8800:8000"
+  volumes:
+    - .:/app
+
+composer:
+  # restart: 'no'
+  image: composer/composer:php7
+  command: install
+  volumes:
+    - .:/app
+

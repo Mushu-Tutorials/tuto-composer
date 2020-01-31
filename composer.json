@@ -1,0 +1,7 @@
+{
+    "name": "ubuntu/composer-test",
+    "description": "",
+    "require": {
+        "michelf/php-markdown": "^1.9"
+    }
+}
